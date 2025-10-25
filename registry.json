@@ -105,6 +105,20 @@
       ]
     },
     {
+      "name": "unit-converter",
+      "type": "registry:component",
+      "title": "Unit Converter",
+      "description": "Convert between different units of measurement (length, weight, temperature, volume, area, speed, time, digital storage).",
+      "dependencies": ["zod", "ai"],
+      "files": [
+        {
+          "path": "registry/ai-tools/tools/unit-converter/tool.ts",
+          "type": "registry:file",
+          "target": "~/ai/tools/unit-converter/tool.ts"
+        }
+      ]
+    },
+    {
       "name": "markdown",
       "type": "registry:component",
       "title": "Markdown Renderer",
@@ -210,6 +224,19 @@
       ]
     },
     {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "A select dropdown component.",
+      "dependencies": ["@radix-ui/react-select", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/ai-tools/ui/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "weather",
       "type": "registry:component",
       "title": "Get Weather",
@@ -300,7 +327,8 @@
         "@ai-tools/websearch",
         "@ai-tools/markdown",
         "@ai-tools/stats",
-        "@ai-tools/search-photos"
+        "@ai-tools/search-photos",
+        "@ai-tools/unit-converter"
       ],
       "files": [
         {
